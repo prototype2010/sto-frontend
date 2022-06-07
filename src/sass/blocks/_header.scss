@@ -1,4 +1,41 @@
 .header {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 63px;
+        &-content {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: -18px;
+            padding-top: 30px;
+            .submenu {
+                display: flex;
+                flex-direction: column;
+                min-height: 45px;
+                width: 165px;
+                padding: 10px 20px;
+                background-color: rgb(107,107,107);
+                border-radius: 4px;
+                a {
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: Raleway, sans-serif;
+                    &:hover {
+                        color: $main-color;
+                        transition: all .3s;
+                    }
+                }
+            }
+            // &:hover {
+            //     display: block;
+            // }
+        }
+        &:hover .dropdown-content {
+            display: block;
+        }
+    }
+    
     .container {
         width: 1200px;
     }
@@ -51,11 +88,9 @@
         &__items {
             height: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             &-link{
-                position: relative;
-                margin-left: 20px;
                 a {
                     font-weight: 600;
                     font-size: 14px;
@@ -64,19 +99,22 @@
                     letter-spacing: 0.04em;
                     color: #fff;
                     text-decoration: none;
-                    
+                    &:hover {
+                        color: $main-color;
+                        transition: all .3s;
+                    }
                 }
                 img {
                     display:  block;
-                    margin-left: 15px;
                     width: 14px;
                     height: 14px;
                 }
                 .arrowDown {
                     position: absolute;
-                    top: 4px;
-                    right: -15px;
+                    top: 3px;
+                    right: 6px;
                 }
+
             }
         }
         &__social {

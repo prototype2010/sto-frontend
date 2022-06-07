@@ -37,9 +37,9 @@ p {
     padding: 0;
 }
 
-.container {
-    margin: 0 auto;
-    width: 1140px;
+
+.hamburger {
+    display: none;
 }
 
 .hidden {
@@ -57,3 +57,5 @@ p {
 @import './blocks/footer';
 @import './blocks/contacts';
 @import './blocks/pageup';
+
+@import './blocks/media';

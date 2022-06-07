@@ -14,7 +14,7 @@
     <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-4 offset-lg-0 col-md-2 offset-md-5">
                     <div class="header__branding">
                         <div class="header__branding-logo">
                             <a href="#">
@@ -26,38 +26,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-6 offset-lg-0 col-md-8 offset-md-1">
                     <div class="header__navigation">
-                        <div class="header__navigation__items">
-                            <div class="header__navigation__items-link">
-                                <a href='#'>HOME</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#aboutus'>ABOUT US</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#services'>SERVICES</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#team'>TEAM</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#testimonials'>TESTIMONIALS</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#contactus'>CONTACT US</a>
-                            </div>
-                            <div class="header__navigation__items-link">
-                                <a href='#'>MORE</a>
-                                <img class="arrowDown" src="./icons/navIcons/arrowDown.svg" alt="arrow down">
-                            </div>
-                            <div class="header__navigation__items-link search">
-                                <img src='./icons/navIcons/search-icon.svg' alt="search" />
+                        <div class="hamburger">
+                            <div class="hamburger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
+                        <ul class="header__navigation__items">
+                            <li class="header__navigation__items-link">
+                                <a href='#'>HOME</a>
+                            </li>
+                            <li class="header__navigation__items-link">
+                                <a href='#aboutus'>ABOUT US</a>
+                            </li>
+                            <li class="header__navigation__items-link">
+                                <a href='#services'>SERVICES</a>
+                            </li>
+                            <li class="header__navigation__items-link">
+                                <a href='#team'>TEAM</a>
+                            </li>
+                            <li class="header__navigation__items-link dropdown-hide">
+                                <a href='#testimonials'>TESTIMONIALS</a>
+                            </li>
+                            <li class="header__navigation__items-link dropdown-hide">
+                                <a href='#contactus'>CONTACT US</a>
+                            </li>
+                            <li class="header__navigation__items-link dropdown">
+                                <a href='#'>MORE</a>
+                                <img class="arrowDown" src="./icons/navIcons/arrowDown.svg" alt="arrow down">
+                                <div class="dropdown-content">
+                                    <ul class="submenu">
+                                        <li class="header__navigation__items-link dropdown-show">
+                                            <a href='#testimonials'>Testimonials</a>
+                                        </li>
+                                        <li class="header__navigation__items-link dropdown-show">
+                                            <a href='#contactus'>Contact Us</a>
+                                        </li>
+                                        <li class="submenu__link">
+                                            <a href='#'>Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__navigation__items-link search">
+                                <img src='./icons/navIcons/search-icon.svg' alt="search" />
+                            </li>
+                        </г>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-lg-2 col-md-3">
                     <div class="header__navigation__social">
                         <div class="header__navigation__social-facebook">
                             <a href="#"><img src='./icons/navIcons/facebook.svg' alt="facebook" /></a>
@@ -73,16 +93,17 @@
             </div>
         </div>
     </div>
+
     <section  class="mainScreen">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-6 col-sm-12">
                     <div class="mainScreen-lable">
                         Trust, Experience,<br>
                         <span>Knowledge & Speed</span>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-sm-12">
                     <div class="mainScreen__description">
                             <div class="mainScreen__description-title">Ideas We Stand for:</div>
                             <div class="mainScreen__description-text">
@@ -94,7 +115,7 @@
             <button class="button mainScreen-btn">CONTACTS US</button>
         </div>
     </section>
-    <script src="js/main.js"></script>
+
 
     <section id="aboutus" class="aboutus">
         <div class="container">
@@ -122,22 +143,22 @@
     <section id="services" class="services">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-xl-3 col-md-6">
                     <div class="services-service">
                         <h3 class="services-title">FULL CAR SERVICE</h3>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl-3 col-md-6">
                     <div class="services-mechanics">
                         <h3 class="services-title">FULLY QUALIFIED MECHANICS</h3>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl-3 col-md-6">
                     <div class="services-warranty">
                         <h3 class="services-title">CAR WARRANTY SERVICE</h3>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl-3 col-md-6">
                     <div class="services-pricing">
                         <h3 class="services-title">CAPPED PRICING SERVICING</h3>
                     </div>
@@ -153,7 +174,7 @@
                 Why Choose <span>Certified Service?</span>
             </h2>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-3 col-md-6">
                     <div class="wrapper">
                         <div class="choose__item">
                             <div class="choose__item-icon">
@@ -184,14 +205,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-6 d-lg-block d-sm-none d-xs-none">
                     <div class="choose-wrap">
                         <div class="choose__block">
                         </div>
                         <img src="./img/chooseCar.png" alt="car" class="choose-car">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-3 col-md-6">
                     <div class="wrapper">
                         <div class="choose__item">
                             <div class="choose__item-icon">
@@ -238,7 +259,7 @@
             <div class="team-number">03</div>
             <h2 class="team-label"><span>OUR TEAM</span> OF SPECIALISTS</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-md-4">
                     <div class="team__specialist">
                         <div class="team__specialist-photo">
                             <img src="./img/team/first.jpg" alt="HARRY A. DEDMON">
@@ -247,7 +268,7 @@
                         <div class="team__specialist-position">Engeener</div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <div class="team__specialist">
                         <div class="team__specialist-photo">
                             <img src="./img/team/second.jpg" alt="STEVE JEFFERSON">
@@ -256,7 +277,7 @@
                         <div class="team__specialist-position">Equipment Technician</div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <div class="team__specialist">
                         <div class="team__specialist-photo">
                             <img src="./img/team/third.jpg" alt="HARRY A. DEDMON">
@@ -281,7 +302,16 @@
                                 I was treated very professionally and kindly. I was concerned about costs, looked it up, and they had an absolutely fair price for the work I needed. I've had no issues so far, and plan to continue going to them for all my needs. I have always trusted this workshop to get the job done right.  Along with honesty, integrity and excellence in service, I fully recommend these guys for service on any vehicle.
                             </p>
                         </div>
-                        <div class="slide-name">Edward Lewis</div>
+                        <div class="slide-name">Edward Lewis Slide 1</div>
+                        <div class="slide-date">Thursday, October 6, 2016</div>
+                    </div>
+                    <div class="feedback__slide">
+                        <div class="slide-descr">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut aperiam rerum id nulla consequuntur asperiores, vel non, et laborum reprehenderit nihil similique veniam sed commodi nesciunt explicabo blanditiis quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut aperiam rerum id nulla consequuntur asperiores, vel non, et laborum reprehenderit nihil similique veniam sed commodi nesciunt explicabo blanditiis quisquam.
+                            </p>
+                        </div>
+                        <div class="slide-name">Adam Smith Slide 2</div>
                         <div class="slide-date">Thursday, October 6, 2016</div>
                     </div>
                     <div class="feedback__slide">
@@ -290,16 +320,7 @@
                                 I was treated very professionally and kindly. I was concerned about costs, looked it up, and they had an absolutely fair price for the work I needed. I've had no issues so far, and plan to continue going to them for all my needs. I have always trusted this workshop to get the job done right.  Along with honesty, integrity and excellence in service, I fully recommend these guys for service on any vehicle.
                             </p>
                         </div>
-                        <div class="slide-name">Edward Lewis</div>
-                        <div class="slide-date">Thursday, October 6, 2016</div>
-                    </div>
-                    <div class="feedback__slide">
-                        <div class="slide-descr">
-                            <p>
-                                I was treated very professionally and kindly. I was concerned about costs, looked it up, and they had an absolutely fair price for the work I needed. I've had no issues so far, and plan to continue going to them for all my needs. I have always trusted this workshop to get the job done right.  Along with honesty, integrity and excellence in service, I fully recommend these guys for service on any vehicle.
-                            </p>
-                        </div>
-                        <div class="slide-name">Edward Lewis</div>
+                        <div class="slide-name">Jim Bredley 3</div>
                         <div class="slide-date">Thursday, October 6, 2016</div>
                     </div>
                 </div>
@@ -310,7 +331,7 @@
     <section id="contactus" class="contacts">
         <div class="container-fluid">
             <div class="row">
-                <div class="col p-0">
+                <div class="col-md-6 col-sm-12 p-0">
                     <h2 class="contacts-title">contacts</h2>
                     <div class="contacts-devider"></div>
                     <div class="contacts-addres">228 PARK AVE S, NEW YORK, NY 10003-1502, US</div>
@@ -324,26 +345,26 @@
                     </div>
                     <form class="contacts__form">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <label>
                                     Name:
                                     <input type="text" required name="your-name" placeholder="ENTER YOUR NAME">
                                 </label>
                             </div> 
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <label>
                                     E-mail:
                                     <input type="email" required name="your-email" placeholder="ENTER YOUR E-MAIL">
                                 </label>
                             </div> 
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <label>
                                     Phone:
                                     <input type="text" required name="your-phone" placeholder="ENTER YOUR PHONE">
                                 </label>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-lg-12">
                                 <label>
                                     Message:
                                     <textarea type="text" required name="your-message" placeholder="ENTER YOUR MESSAGE"></textarea>
@@ -352,7 +373,7 @@
                         <button type="submit" class="button button-submit">SUBMIT</button>
                     </form>
                 </div>
-                <div class="col p-0">
+                <div class="col-md-6 col-sm-12 p-0">
                     <div class="contacts__map"></div>
                 </div>
             </div>
