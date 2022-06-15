@@ -1,0 +1,390 @@
+@media (max-width: 1439px) 
+
+
+
+@media (max-width: 1200px) 
+    .dropdown-hide 
+        display: none
+    
+    .dropdown-show 
+        display: block
+    
+    .aboutus 
+        padding-top: 60px
+        min-height: 600px
+    
+    .services 
+        &-service, &-mechanics, &-warranty, &-pricing 
+            height: 495px
+        
+    
+    .choose 
+        height: 1100px
+        padding-top: 50px
+    
+    .schedule 
+        height: 400px
+        padding-top: 120px
+    
+    .team 
+        &-number, &-label 
+            text-align: center
+        
+        &__specialist 
+            min-height: 450px
+            &-photo 
+                margin: 0 auto
+                width: 305px
+                height: 295px
+            
+        
+    
+    .feedback 
+        padding: 100px 50px 0 350px
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+
+
+@media (max-width: 991px) 
+    .header 
+        min-height: 130px
+        &__branding 
+            &-logo 
+                margin-bottom: 15px
+                &::before 
+                    display: none
+                
+            
+            &-title 
+                display: none
+            
+        
+        &__navigation 
+            &__social 
+                &::before 
+                    display: none
+                
+            
+        
+    
+    .mainScreen 
+        padding-top: 150px
+        &__description 
+            &-title 
+                padding-top: 10px
+                font-size: 28px
+            
+        
+        &-lable 
+            font-size: 28px
+            padding: 7px 10px 40px 25px
+            min-height: 205px
+            span 
+                font-size: 25px
+            
+        
+    
+    .aboutus 
+        &__descr 
+            width: 470px
+        
+    
+    .services 
+        &-title 
+            font-size: 27px
+        
+    
+    .team 
+        margin-top: 50px
+        &__specialist 
+            min-height: 350px
+            &-photo 
+                width: 216px
+                height: 220px
+            
+            &-name 
+                margin-top: 10px
+                font-size: 22px
+            
+        
+    
+    .feedback 
+        padding: 100px 0 0 0
+    
+    .contacts 
+        min-height: 800px
+        label 
+            margin-bottom: 0
+        
+        &__form 
+            input, textarea 
+                padding-top: 0
+            
+            textarea 
+                height: 160px
+            
+        
+    
+    footer 
+        padding-top: 25px
+        min-height: 230px
+        .logo 
+            flex-direction: column
+            &-label 
+                border: none
+                padding: 0
+                margin: 15px 0 0 0
+            
+        
+        .wrap 
+            flex-direction: column
+            .copyright 
+                text-align: center
+            
+            .social 
+                margin-top: 10px
+                justify-content: center  
+                &-item 
+                    margin: 0 10px
+                 
+            
+        
+    
+
+
+@media (max-width: 767px) 
+    .header 
+        margin-top: 60px
+        .hamburger 
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 60px
+            background-color: #000
+            z-index: 10
+            &-menu 
+                position: absolute
+                left: 20px
+                top: 50%
+                transform: translateY(-50%)
+                width: 26px
+                height: 14px
+                span 
+                    display: block
+                    height: 2px
+                    width: 100%
+                    background-color: #fff
+                    margin-bottom: 4px
+                    transition: 0.4s all
+                
+                &-active 
+                    span 
+                        margin-bottom: -2px
+                        &:nth-child(1) 
+                            transform: translateY(3px) rotate(-45deg)
+                        
+                        &:nth-child(2) 
+                            display: none
+                        
+                        &:nth-child(3) 
+                            transform: translateY(3px) rotate(45deg)
+                        
+                    
+                
+
+            
+        
+        &__navigation 
+            .dropdown-hide 
+                display: block
+            
+            .dropdown 
+                display: none
+            
+            &__items 
+                position: fixed
+                flex-direction: column
+                justify-content: flex-start
+                align-items: flex-start
+                top: 0
+                left: -100%
+                width: 50%
+                height: 100vh
+                padding: 80px 15px 20px 40px
+                background-color: rgba(0,0,0, .8)
+                transition: 0.6s all
+                &-active 
+                    left: 0
+                
+                &-link 
+                    margin: 10px 0
+                
+            
+            &__social 
+                justify-content: center
+                margin: 0
+                &-facebook, &-twitter, &-instagram 
+                    margin: 0
+                    width: 40px
+                
+            
+        
+        &__branding 
+            justify-content: center
+            a 
+                margin: 0
+            
+        
+    
+    .mainScreen 
+        padding-top: 100px
+        &-lable 
+            margin: 0 20px
+            width: 475px
+            text-align: center
+            padding: 30px 15px
+            min-height: 160px
+            font-size: 38px
+            span 
+                font-size: 38px
+            
+        
+        &__description 
+            margin: 20px 20px 0 20px
+            &-title 
+                font-size: 38px
+            
+        
+    
+    .aboutus 
+        &__descr 
+            &-text 
+                width: 380px
+            
+        
+    
+    .services 
+        &-title 
+            text-align: center 
+            padding: 50% 0
+        
+    
+    .choose 
+        margin-bottom: 20px
+        min-height: 1600px
+        &-title 
+            margin-bottom: 30px
+        
+        &__item 
+            margin: 10px 0
+        
+    
+    .team 
+        &__specialist 
+            margin: 25px 0
+            &-photo 
+                width: 300px
+                height: 300px
+                
+            
+        
+    
+    .feedback 
+        margin-top: 20px
+    
+    .contacts 
+        min-height: 1150px
+        &__map 
+            margin-top: 40px
+            width: 575px
+            height: 300px
+        
+    
+
+
+@media (max-width: 575px) 
+    .mainScreen 
+        padding-bottom: 20px
+        min-height: 700px
+        &-lable 
+            width: 260px
+            font-size: 22px
+            span 
+                font-size: 33px
+            
+        
+        &__description 
+            &-title 
+                font-size: 33px
+            
+        
+    
+    .aboutus 
+        &__descr 
+            width: 300px
+            &-text 
+                width: 280px
+            
+            &-number 
+                text-align: center
+            
+            &-title 
+                font-size: 33px
+                text-align: center
+                h2, span 
+                    font-size: 33px
+                
+            
+        
+        button 
+            display: block
+            margin: 20px auto 0 auto
+        
+    
+    .services 
+        margin-top: 50px
+    
+    .choose 
+        min-height: 1700px
+        &-wrap 
+            display: none
+        
+    
+    .schedule 
+        padding-top: 70px
+        &-title 
+            font-size: 18px
+        
+        &-phone 
+            font-size: 26px
+        
+        button 
+            margin-top: 40px
+        
+    
+    .feedback 
+        padding-top: 20px
+        &-label 
+            font-size: 33px
+            text-align: center
+        
+        &__slider 
+            width: 280px
+            padding: 0
+        
+        .slide 
+            width: 280px
+            &-descr 
+                width: 280px
+            
+        
+    
+    .contacts 
+        &__map 
+            width: 100%
+        
+    

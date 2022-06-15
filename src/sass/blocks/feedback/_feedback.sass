@@ -1,0 +1,62 @@
+.feedback 
+    margin-top: 100px
+    height: 605px
+    background: url('./feedbackBg.jpg') center center/cover no-repeat
+    padding: 150px 0 0 50%
+    &-number 
+        font-family: "Montserrat", Sans-serif
+        font-size: 60px
+        font-weight: 700
+        color: #444444
+        line-height: 80px
+    
+    &-label 
+        color: #ffffff
+        font-family: "Raleway", Sans-serif
+        font-size: 38px
+        font-weight: 300
+        text-align: left
+        span 
+            font-weight: 800
+        
+    
+    &__slider
+        padding-left: 60px
+        width: 570px
+
+    .slide
+        padding-left: 12px
+        &-descr
+            width: 510px
+            color: #ffffff
+            font-family: "Open Sans", Sans-serif
+            font-size: 14px
+            line-height: 21px
+
+        &-name
+            margin-top: 20px
+            color: $main-color
+            font-family: "Open Sans", Sans-serif
+            font-size: 14px
+            font-weight: 700
+
+        &-date
+            margin-top: 5px
+            color: #ffffff
+            font-family: "Open Sans", Sans-serif
+            font-size: 14px
+            font-weight: 600
+            font-style: italic
+.slick-next, .slick-prev
+    top: 100px
+
+.slick-dots
+    li.slick-active
+        button::before
+            color: #9db800
+        button:hover
+            opacity: .5
+    li
+        button::before
+            color: white
+            opacity: .8
