@@ -8,7 +8,7 @@ module.exports = {
     // Where webpack looks to start building the bundle
     entry: [paths.src + '/index.js'],
 
-    // Where webpack outputs the assets and bundles
+    // Where webpack outputs the images and bundles
     output: {
         path: paths.build,
         filename: '[name].bundle.js',
@@ -17,7 +17,7 @@ module.exports = {
 
     // Customize the webpack build process
     plugins: [
-        // Removes/cleans build folders and unused assets when rebuilding
+        // Removes/cleans build folders and unused images when rebuilding
         new CleanWebpackPlugin(),
 
         // Copies files from target to destination folder
@@ -25,7 +25,7 @@ module.exports = {
             patterns: [
                 {
                     from: paths.public,
-                    to: 'assets',
+                    to: 'images',
                     globOptions: {
                         ignore: ['*.DS_Store'],
                     },
