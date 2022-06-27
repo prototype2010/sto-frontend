@@ -132,12 +132,16 @@
                     display: flex
                     flex-direction: column
                     min-height: 45px
-                    width: 70px
+                    width: 80px
                     padding: 10px 20px
                     background-color: rgb(107,107,107)
                     border-radius: 4px
                     li
                         margin-bottom: 5px
+                        position: relative
+                        .flag
+                            right: -6px
+                            top: 5px
             a
                 font-weight: 600
                 font-size: 14px
@@ -149,13 +153,13 @@
                 &:hover
                     color: $main-color
                     transition: all .3s
-            .arrowDown 
+            .flag 
                 position: absolute
                 display:  block
-                width: 14px
-                height: 14px
-                top: 7px
-                right: -8px
+                width: 16px
+                height: 12px
+                top: 9px
+                right: -13px
 
             &:hover .header__navigation__language-content
                 display: block
