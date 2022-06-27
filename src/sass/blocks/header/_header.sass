@@ -113,33 +113,93 @@
                     position: absolute
                     top: 3px
                     right: 6px
-                
+        &__language
+            margin-left: 10px
+            position: relative
+            &-en
+                a
+                    display: block
+                    width: 40px
+                    height: 30px
+                    text-align: center
+                    padding-top: 4px
+            &-content
+                display: none
+                position: absolute
+                padding-top: 10px
+                left: -32px
+                ul
+                    display: flex
+                    flex-direction: column
+                    min-height: 45px
+                    width: 80px
+                    padding: 10px 15px
+                    background-color: rgb(107,107,107)
+                    border-radius: 4px
+                    li
+                        margin-bottom: 5px
+                        position: relative
+                        width: 60px
+                        .flag
+                            display: inline-block
+                            width: 16px
+                            height: 18px
+                            img
+                                max-width: 100%
+            a   
+                display: block
+                font-weight: 600
+                font-size: 14px
+                line-height: 1.643
+                font-family: Raleway, sans-serif
+                letter-spacing: 0.04em
+                color: #fff
+                text-decoration: none
+                span
+                    display: inline-block
+                &:hover
+                    color: $main-color
+                    transition: all .3s
+            .flag-main
+                a
+                    display: block
+                    width: 25px
+                    height: 22px
+                    img
+                        max-width: 100%
+            &:hover .header__navigation__language-content
+                display: block
+               
 
-            
+
         
         &__social 
             position: relative
             height: 100%
-            margin-left: 20px
             display: flex
             align-items: center
             &::before 
                 content: ''
                 position: absolute
                 top: 8px
+                left: -5px
                 width: 1px
                 height: 40px
                 background-color: #fff
             
             &-facebook, &-twitter, &-instagram 
-                margin-left: 23px
-                width: 15px
-                height: 15px
-                a 
+                display: block
+                padding-left: 5px
+                a   
+                    display: flex
+                    align-items: center
+                    width: 30px
+                    height: 30px
                     img 
                         display: block
-                        width: 100%
-                        height: 100%
+                        width: 18px
+                        height: 18px
+                        margin: 0 auto
                     
                 
             
