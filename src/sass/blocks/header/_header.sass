@@ -127,22 +127,27 @@
                 display: none
                 position: absolute
                 padding-top: 10px
-                left: -14px
+                left: -32px
                 ul
                     display: flex
                     flex-direction: column
                     min-height: 45px
                     width: 80px
-                    padding: 10px 20px
+                    padding: 10px 15px
                     background-color: rgb(107,107,107)
                     border-radius: 4px
                     li
                         margin-bottom: 5px
                         position: relative
+                        width: 60px
                         .flag
-                            right: -6px
-                            top: 5px
-            a
+                            display: inline-block
+                            width: 16px
+                            height: 18px
+                            img
+                                max-width: 100%
+            a   
+                display: block
                 font-weight: 600
                 font-size: 14px
                 line-height: 1.643
@@ -150,17 +155,18 @@
                 letter-spacing: 0.04em
                 color: #fff
                 text-decoration: none
+                span
+                    display: inline-block
                 &:hover
                     color: $main-color
                     transition: all .3s
-            .flag 
-                position: absolute
-                display:  block
-                width: 16px
-                height: 12px
-                top: 9px
-                right: -13px
-
+            .flag-main
+                a
+                    display: block
+                    width: 25px
+                    height: 22px
+                    img
+                        max-width: 100%
             &:hover .header__navigation__language-content
                 display: block
                
