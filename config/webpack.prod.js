@@ -5,13 +5,15 @@ const { merge } = require('webpack-merge')
 const paths = require('./paths')
 const common = require('./webpack.common')
 
+console.log(process.env)
+
 module.exports = merge(common, {
     mode: 'production',
     devtool: false,
     entry: './src/index.js',
     output: {
         path: paths.build,
-        publicPath: '/',
+        publicPath: process.env.NODE_ENV === 'production' ? '/sto-frontend' : '/',
         filename: 'script.js',
         /* chunks version
          filename: 'js/[name].[contenthash].bundle.js',
@@ -58,6 +60,7 @@ module.exports = merge(common, {
         // Extracts CSS into separate files
         new MiniCssExtractPlugin({
             filename: 'styles.css',
+
             /* chunks version
             filename: 'styles/[name].[contenthash].css',
             chunkFilename: '[id].css',  chunks version
