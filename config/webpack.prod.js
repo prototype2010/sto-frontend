@@ -15,7 +15,7 @@ module.exports = merge(common, {
         path: paths.build,
         publicPath: ROOT_PATH,
         filename: 'script.js',
-        assetModuleFilename: `./${ROOT_PATH}/[hash][ext][query]`
+        assetModuleFilename: `images/[hash][ext][query]`
         /* chunks version
          filename: 'js/[name].[contenthash].bundle.js',
          */
