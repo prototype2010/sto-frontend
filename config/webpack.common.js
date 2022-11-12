@@ -55,6 +55,7 @@ module.exports = {
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
+                resource: []
             },
 
             // Fonts and SVGs: Inline files

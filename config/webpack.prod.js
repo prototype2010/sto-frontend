@@ -6,6 +6,7 @@ const paths = require('./paths')
 const common = require('./webpack.common')
 
 console.log(process.env)
+const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/sto-frontend' : '/'
 
 module.exports = merge(common, {
     mode: 'production',
@@ -13,8 +14,9 @@ module.exports = merge(common, {
     entry: './src/index.js',
     output: {
         path: paths.build,
-        publicPath: process.env.NODE_ENV === 'production' ? '/sto-frontend' : '/',
+        publicPath: ROOT_PATH,
         filename: 'script.js',
+        assetModuleFilename: `./${ROOT_PATH}/[hash][ext][query]`
         /* chunks version
          filename: 'js/[name].[contenthash].bundle.js',
          */
