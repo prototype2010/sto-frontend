@@ -19,7 +19,7 @@ module.exports = {
     // Customize the webpack build process
     plugins: [
         // Removes/cleans build folders and unused images when rebuilding
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
 
         // Copies files from target to destination folder
         new CopyWebpackPlugin({
