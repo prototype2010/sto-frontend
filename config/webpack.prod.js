@@ -5,7 +5,7 @@ const { merge } = require('webpack-merge')
 const paths = require('./paths')
 const common = require('./webpack.common')
 
-const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/sto-frontend' : '/'
+const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/sto-frontend/' : '/'
 
 module.exports = merge(common, {
     mode: 'production',
@@ -54,9 +54,7 @@ module.exports = merge(common, {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
-                generator: {
-                    filename: '[hash][ext][query]'
-                }
+
             },
         ],
     },
