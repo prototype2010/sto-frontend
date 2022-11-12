@@ -5,7 +5,6 @@ const { merge } = require('webpack-merge')
 const paths = require('./paths')
 const common = require('./webpack.common')
 
-console.log(process.env)
 const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/sto-frontend' : '/'
 
 module.exports = merge(common, {
