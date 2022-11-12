@@ -13,6 +13,7 @@ module.exports = {
         path: paths.build,
         filename: '[name].bundle.js',
         publicPath: '/',
+        assetModuleFilename: '[hash][ext][query]'
     },
 
     // Customize the webpack build process
@@ -21,18 +22,18 @@ module.exports = {
         new CleanWebpackPlugin(),
 
         // Copies files from target to destination folder
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: paths.public,
-                    to: 'images',
-                    globOptions: {
-                        ignore: ['*.DS_Store'],
-                    },
-                    noErrorOnMissing: true,
-                },
-            ],
-        }),
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         {
+        //             from: paths.public,
+        //             to: 'images',
+        //             globOptions: {
+        //                 ignore: ['*.DS_Store'],
+        //             },
+        //             noErrorOnMissing: true,
+        //         },
+        //     ],
+        // }),
 
         // Generates an HTML file from a template
         // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
@@ -51,7 +52,10 @@ module.exports = {
             { test: /\.js$/, use: ['babel-loader'] },
 
             // Images: Copy image files to build folder
-            { test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i, type: 'asset/resource' },
+            {
+                test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+                type: 'asset/resource',
+            },
 
             // Fonts and SVGs: Inline files
             { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/resource' },
