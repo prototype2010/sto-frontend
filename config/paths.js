@@ -4,8 +4,11 @@ module.exports = {
     // Source files
     src: path.resolve(__dirname, '../src'),
 
+    // Github pages build files
+    github_pages: path.resolve(__dirname, '../github_pages'),
+
     // Production build files
-    build: path.resolve(__dirname, '../dist'),
+    production: path.resolve(__dirname, '../dist'),
 
     // Static files that get copied to build folder
     public: path.resolve(__dirname, '../src/images'),

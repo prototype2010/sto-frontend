@@ -10,7 +10,7 @@ module.exports = merge(common, {
     devtool: false,
     entry: './src/index.js',
     output: {
-        path: paths.build,
+        path: paths.production,
         publicPath: '/',
         filename: 'script.js',
         // assetModuleFilename: `[hash][ext][query]`

@@ -19,7 +19,7 @@ module.exports = merge(common, {
     devtool: false,
     entry: './src/index.js',
     output: {
-        path: paths.build,
+        path: paths.github_pages,
         publicPath: ROOT_PATH,
         filename: 'script.js',
         // assetModuleFilename: `[hash][ext][query]`
