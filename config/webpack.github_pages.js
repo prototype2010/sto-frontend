@@ -21,11 +21,9 @@ module.exports = merge(common, {
     output: {
         path: paths.github_pages,
         publicPath: ROOT_PATH,
-        filename: 'script.js',
         // assetModuleFilename: `[hash][ext][query]`
-        /* chunks version
-         filename: 'js/[name].[contenthash].bundle.js',
-         */
+        filename: 'js/[name].[contenthash].bundle.js',
+
     },
     module: {
         rules: [
@@ -68,22 +66,19 @@ module.exports = merge(common, {
     plugins: [
         // Extracts CSS into separate files
         new MiniCssExtractPlugin({
-            filename: 'styles.css',
-
-            /* chunks version
             filename: 'styles/[name].[contenthash].css',
-            chunkFilename: '[id].css',  chunks version
-            */
+            chunkFilename: '[id].css',
         }),
     ],
     optimization: {
         minimize: true,
         minimizer: [new CssMinimizerPlugin(), '...'],
-        /* chunks version
-        runtimeChunk: { chunks version
+        runtimeChunk: {
             name: 'runtime',
         },
-         */
+        splitChunks: {
+            chunks: 'all',
+        },
     },
     performance: {
         hints: 'warning',
