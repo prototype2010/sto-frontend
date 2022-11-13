@@ -10,10 +10,10 @@ module.exports = {
 
     // Where webpack outputs the images and bundles
     output: {
-        path: paths.build,
+        path: paths.production,
         filename: '[name].bundle.js',
         publicPath: '/',
-        assetModuleFilename: '[hash][ext][query]'
+        assetModuleFilename: 'assets/[hash][ext][query]'
     },
 
     // Customize the webpack build process

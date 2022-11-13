@@ -18,7 +18,7 @@ module.exports = merge(common, {
         path: paths.github_pages,
         publicPath: `/${packageJson.repository.githubPagesUrl}/`,
         filename: 'js/[name].[contenthash].bundle.js',
-
+        assetModuleFilename: 'assets/[hash][ext][query]'
     },
     module: {
         rules: [
