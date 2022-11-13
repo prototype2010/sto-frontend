@@ -6,6 +6,10 @@ const paths = require('./paths')
 const common = require('./webpack.common')
 const packageJson = require('package.json')
 
+if(!packageJson.repository.githubPagesUrl) {
+    throw new Error('package.json should contain your github namespace by key repository.githubPagesUrl')
+}
+
 const ROOT_PATH = process.env.NODE_ENV === 'production' ?
     `/${packageJson.repository.githubPagesUrl}/`
     : '/'
