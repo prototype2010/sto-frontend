@@ -4,6 +4,11 @@ const { merge } = require('webpack-merge')
 
 const paths = require('./paths')
 const common = require('./webpack.common')
+const packageJson = require('package.json')
+
+const ROOT_PATH = process.env.NODE_ENV === 'production' ?
+    `/${packageJson.repository.githubPagesUrl}/`
+    : '/'
 
 module.exports = merge(common, {
     mode: 'production',
@@ -11,7 +16,7 @@ module.exports = merge(common, {
     entry: './src/index.js',
     output: {
         path: paths.build,
-        publicPath: '/',
+        publicPath: ROOT_PATH,
         filename: 'script.js',
         // assetModuleFilename: `[hash][ext][query]`
         /* chunks version

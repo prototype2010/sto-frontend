@@ -4,9 +4,13 @@
   "description": "car service landing",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "build:github_pages": "cross-env NODE_ENV=production webpack --config config/webpack.github_pages.js"
   },
   "author": "Denis Perepelitsa",
+  "repository": {
+    "githubPagesUrl": "sto-frontend"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.8",
