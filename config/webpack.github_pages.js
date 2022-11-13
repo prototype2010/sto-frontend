@@ -10,18 +10,13 @@ if(!packageJson.repository.githubPagesUrl) {
     throw new Error('package.json should contain your github namespace by key repository.githubPagesUrl')
 }
 
-const ROOT_PATH = process.env.NODE_ENV === 'production' ?
-    `/${packageJson.repository.githubPagesUrl}/`
-    : '/'
-
 module.exports = merge(common, {
     mode: 'production',
     devtool: false,
     entry: './src/index.js',
     output: {
         path: paths.github_pages,
-        publicPath: ROOT_PATH,
-        // assetModuleFilename: `[hash][ext][query]`
+        publicPath: `/${packageJson.repository.githubPagesUrl}/`,
         filename: 'js/[name].[contenthash].bundle.js',
 
     },
