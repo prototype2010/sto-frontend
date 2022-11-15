@@ -24,22 +24,32 @@
         padding-left: 60px
         width: 570px
 
-    .slide
+    &__slide
         padding-left: 12px
+        &__block
+            display: flex
+            align-items: center
+            height: 60px
+            margin-top: 15px
+            &-data
+                margin-left: 25px
+            &-img
+                height: 60px
+                width: 60px
+                img
+                    width: 100%
+                    border-radius: 100%
         &-descr
             width: 510px
             color: #ffffff
             font-family: "Open Sans", Sans-serif
             font-size: 14px
             line-height: 21px
-
         &-name
-            margin-top: 20px
             color: $main-color
             font-family: "Open Sans", Sans-serif
             font-size: 14px
             font-weight: 700
-
         &-date
             margin-top: 5px
             color: #ffffff
